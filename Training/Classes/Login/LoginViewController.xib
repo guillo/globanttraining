@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Training" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="PbT-dO-q4w" id="Sqj-83-Htp"/>
+                <outlet property="passwordTextField" destination="9Pa-oi-APF" id="dka-GD-4Dc"/>
+                <outlet property="userLabel" destination="K8c-56-nlt" id="5qe-9s-i3z"/>
+                <outlet property="userNameTextField" destination="SnF-t0-jqw" id="LDY-jh-bSs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globant" translatesAutoresizingMaskIntoConstraints="NO" id="iuV-eI-njI">
+                    <rect key="frame" x="67" y="16" width="240" height="105"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SnF-t0-jqw">
+                    <rect key="frame" x="16" y="230" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9Pa-oi-APF">
+                    <rect key="frame" x="16" y="268" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0k-BJ-QgA">
+                    <rect key="frame" x="16" y="306" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.95147552699401583" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="btnLoginTap:" destination="-1" eventType="touchUpInside" id="UQP-th-rEU"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-56-nlt">
+                    <rect key="frame" x="317" y="626" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Username/Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbT-dO-q4w">
+                    <rect key="frame" x="16" y="173" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SnF-t0-jqw" firstAttribute="top" secondItem="PbT-dO-q4w" secondAttribute="bottom" constant="36" id="0J5-Fb-Rpm"/>
+                <constraint firstAttribute="bottom" secondItem="K8c-56-nlt" secondAttribute="bottom" constant="20" id="5jA-nz-rTX"/>
+                <constraint firstAttribute="trailing" secondItem="iuV-eI-njI" secondAttribute="trailing" constant="68" id="8ji-G2-oQP"/>
+                <constraint firstItem="SnF-t0-jqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="FX4-Mu-5K6"/>
+                <constraint firstAttribute="trailing" secondItem="9Pa-oi-APF" secondAttribute="trailing" constant="16" id="Fnp-EV-2Ag"/>
+                <constraint firstItem="PbT-dO-q4w" firstAttribute="top" secondItem="iuV-eI-njI" secondAttribute="bottom" constant="52" id="GuG-XM-QPW"/>
+                <constraint firstItem="iuV-eI-njI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="RDy-T9-9vt"/>
+                <constraint firstItem="9Pa-oi-APF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="T7u-UE-xTb"/>
+                <constraint firstItem="iuV-eI-njI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="YsV-BU-x70"/>
+                <constraint firstAttribute="trailing" secondItem="O0k-BJ-QgA" secondAttribute="trailing" constant="16" id="cEw-DA-3nZ"/>
+                <constraint firstItem="PbT-dO-q4w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="cXf-1u-DnM"/>
+                <constraint firstAttribute="trailing" secondItem="PbT-dO-q4w" secondAttribute="trailing" constant="16" id="ed0-Hj-MjP"/>
+                <constraint firstAttribute="trailing" secondItem="SnF-t0-jqw" secondAttribute="trailing" constant="16" id="i55-MV-jMz"/>
+                <constraint firstItem="O0k-BJ-QgA" firstAttribute="top" secondItem="9Pa-oi-APF" secondAttribute="bottom" constant="8" id="tAO-sS-zSz"/>
+                <constraint firstAttribute="trailing" secondItem="K8c-56-nlt" secondAttribute="trailing" constant="16" id="uFt-vu-gOA"/>
+                <constraint firstItem="9Pa-oi-APF" firstAttribute="top" secondItem="SnF-t0-jqw" secondAttribute="bottom" constant="8" id="xUu-hk-jbF"/>
+                <constraint firstItem="O0k-BJ-QgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="yMk-hx-kzg"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="globant" width="479" height="105"/>
+    </resources>
+</document>
