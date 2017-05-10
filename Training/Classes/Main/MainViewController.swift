@@ -41,7 +41,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainProtocol {
   func showMainCoursesScreen(user: LoginModel) {
-    self.performSegue(withIdentifier: "loginSuccessfulSegue", sender: user)
+    self.performSegue(withIdentifier: "logedUserSegue", sender: user)
   }
 
   func showLoginScreen() {

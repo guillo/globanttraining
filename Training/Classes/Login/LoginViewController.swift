@@ -27,14 +27,13 @@ class LoginViewController: UIViewController {
   @IBAction func btnLoginTap(_ sender: Any) {
     errorLabel.isHidden = true
     presenter.onLogin(username: userNameTextField.text!, password: passwordTextField.text!)
-    
+
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     presenter = LoginPresenter(loginView: self)
-
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,11 +50,17 @@ extension LoginViewController: LoginProtocol {
     errorLabel.text = error
   }
 
-  func onLoginSuccess(){
+  func onLoginSuccess(user: LoginModel){
     //let mainVC = TableViewViewController(nibName:"TableViewViewController", bundle:nil)
     //self.navigationController?.pushViewController(mainVC, animated: true)
 
-    self.performSegue(withIdentifier: "loginSuccessfulSegue", sender: nil)
+    //let yourStr : AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("YourStringKey")
+
+    //if condition {
+    //
+    //}
+
+    self.performSegue(withIdentifier: "loginSuccessfulSegue", sender: user)
 
     //self.present(mainVC, animated: true, completion: nil)
 

@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MainPresenter.isUserLoged() -&gt; ():MainPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data as NSData)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LoginViewController.onLoginSuccess() -&gt; ():LoginViewController.swift">
          <PersistentStrings>
             <PersistentString

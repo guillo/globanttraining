@@ -12,7 +12,7 @@ protocol LoginProtocol: class {
 
   func onLoginError(error: String)
 
-  func onLoginSuccess()
+  func onLoginSuccess(user: LoginModel)
 
   func showEmptyUsername()
 

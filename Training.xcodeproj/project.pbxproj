@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1597681EC26CC5002E472F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15974E1EC26CC5002E472F /* LoginModel.swift */; };
+		AA15976A1EC26CC5002E472F /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597501EC26CC5002E472F /* LoginProtocol.swift */; };
+		AA15976B1EC26CC5002E472F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597511EC26CC5002E472F /* LoginViewController.swift */; };
+		AA15976C1EC26CC5002E472F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1597521EC26CC5002E472F /* LoginViewController.xib */; };
+		AA15976D1EC26CC5002E472F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597541EC26CC5002E472F /* MainPresenter.swift */; };
+		AA15976E1EC26CC5002E472F /* MainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597551EC26CC5002E472F /* MainProtocol.swift */; };
+		AA15976F1EC26CC5002E472F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597561EC26CC5002E472F /* MainViewController.swift */; };
+		AA1597701EC26CC5002E472F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1597571EC26CC5002E472F /* MainViewController.xib */; };
+		AA1597711EC26CC5002E472F /* MainCourseDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */; };
+		AA1597721EC26CC5002E472F /* MainCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */; };
+		AA1597731EC26CC5002E472F /* MainCourseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */; };
+		AA1597741EC26CC5002E472F /* MainCoursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */; };
+		AA1597751EC26CC5002E472F /* MainCourseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975F1EC26CC5002E472F /* MainCourseCellProtocol.swift */; };
+		AA1597761EC26CC5002E472F /* MainCourseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597601EC26CC5002E472F /* MainCourseCellView.swift */; };
+		AA1597771EC26CC5002E472F /* MainCourseCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1597611EC26CC5002E472F /* MainCourseCellView.xib */; };
+		AA1597791EC26CC5002E472F /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597641EC26CC5002E472F /* SettingsPresenter.swift */; };
+		AA15977A1EC26CC5002E472F /* SettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597651EC26CC5002E472F /* SettingsProtocol.swift */; };
+		AA15977B1EC26CC5002E472F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597661EC26CC5002E472F /* SettingsViewController.swift */; };
+		AA15977C1EC26CC5002E472F /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1597671EC26CC5002E472F /* SettingsViewController.xib */; };
+		AA15977E1EC26CCA002E472F /* MainCoursesList.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AA15977D1EC26CCA002E472F /* MainCoursesList.xcdatamodel */; };
+		AA1597821EC351CE002E472F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597811EC351CE002E472F /* LoginPresenter.swift */; };
+		AA1597861EC357EF002E472F /* MainCoursesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597831EC357EF002E472F /* MainCoursesPresenter.swift */; };
+		AA1597871EC357EF002E472F /* MainCoursesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597841EC357EF002E472F /* MainCoursesProtocol.swift */; };
+		AA1597881EC357EF002E472F /* MainCoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597851EC357EF002E472F /* MainCoursesTableViewController.swift */; };
+		AA15978B1EC3599A002E472F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1597891EC3599A002E472F /* Main.storyboard */; };
 		AA421CA01EBA16E500C1F6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421C9F1EBA16E500C1F6FF /* AppDelegate.swift */; };
-		AA421CA51EBA16E500C1F6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA421CA31EBA16E500C1F6FF /* Main.storyboard */; };
 		AA421CA71EBA16E500C1F6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA421CA61EBA16E500C1F6FF /* Assets.xcassets */; };
 		AA421CAA1EBA16E500C1F6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA421CA81EBA16E500C1F6FF /* LaunchScreen.storyboard */; };
 		AA421CB51EBA16E500C1F6FF /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CB41EBA16E500C1F6FF /* TrainingTests.swift */; };
-		AA421CC31EBA1BFD00C1F6FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CC11EBA1BFD00C1F6FF /* LoginViewController.swift */; };
-		AA421CC41EBA1BFD00C1F6FF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA421CC21EBA1BFD00C1F6FF /* LoginViewController.xib */; };
-		AA421CC61EBA50F700C1F6FF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CC51EBA50F700C1F6FF /* LoginPresenter.swift */; };
-		AA421CC81EBA514600C1F6FF /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CC71EBA514600C1F6FF /* LoginProtocol.swift */; };
-		AA421CCC1EBA709800C1F6FF /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CCA1EBA709800C1F6FF /* TableViewViewController.swift */; };
-		AA421CCF1EBB6FBA00C1F6FF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA421CCE1EBB6FBA00C1F6FF /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,21 +49,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA15974E1EC26CC5002E472F /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AA1597501EC26CC5002E472F /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		AA1597511EC26CC5002E472F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA1597521EC26CC5002E472F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AA1597541EC26CC5002E472F /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		AA1597551EC26CC5002E472F /* MainProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
+		AA1597561EC26CC5002E472F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA1597571EC26CC5002E472F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseDetailProtocol.swift; sourceTree = "<group>"; };
+		AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseDetailViewController.swift; sourceTree = "<group>"; };
+		AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCourseDetailViewController.xib; sourceTree = "<group>"; };
+		AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoursePresenter.swift; sourceTree = "<group>"; };
+		AA15975F1EC26CC5002E472F /* MainCourseCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseCellProtocol.swift; sourceTree = "<group>"; };
+		AA1597601EC26CC5002E472F /* MainCourseCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseCellView.swift; sourceTree = "<group>"; };
+		AA1597611EC26CC5002E472F /* MainCourseCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCourseCellView.xib; sourceTree = "<group>"; };
+		AA1597641EC26CC5002E472F /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		AA1597651EC26CC5002E472F /* SettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsProtocol.swift; sourceTree = "<group>"; };
+		AA1597661EC26CC5002E472F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AA1597671EC26CC5002E472F /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		AA15977D1EC26CCA002E472F /* MainCoursesList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MainCoursesList.xcdatamodel; sourceTree = "<group>"; };
+		AA1597811EC351CE002E472F /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		AA1597831EC357EF002E472F /* MainCoursesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoursesPresenter.swift; sourceTree = "<group>"; };
+		AA1597841EC357EF002E472F /* MainCoursesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoursesProtocol.swift; sourceTree = "<group>"; };
+		AA1597851EC357EF002E472F /* MainCoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoursesTableViewController.swift; sourceTree = "<group>"; };
+		AA15978A1EC3599A002E472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA421C9C1EBA16E500C1F6FF /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA421C9F1EBA16E500C1F6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA421CA41EBA16E500C1F6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA421CA61EBA16E500C1F6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA421CA91EBA16E500C1F6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA421CAB1EBA16E500C1F6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA421CB01EBA16E500C1F6FF /* TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA421CB41EBA16E500C1F6FF /* TrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTests.swift; sourceTree = "<group>"; };
 		AA421CB61EBA16E500C1F6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA421CC11EBA1BFD00C1F6FF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AA421CC21EBA1BFD00C1F6FF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		AA421CC51EBA50F700C1F6FF /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		AA421CC71EBA514600C1F6FF /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
-		AA421CCA1EBA709800C1F6FF /* TableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
-		AA421CCE1EBB6FBA00C1F6FF /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +102,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA15974C1EC26CC5002E472F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA15974D1EC26CC5002E472F /* Login */,
+				AA1597531EC26CC5002E472F /* Main */,
+				AA1597581EC26CC5002E472F /* MainCourseDetail */,
+				AA15975D1EC26CC5002E472F /* MainCourses */,
+				AA1597631EC26CC5002E472F /* Settings */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AA15974D1EC26CC5002E472F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA15974E1EC26CC5002E472F /* LoginModel.swift */,
+				AA1597501EC26CC5002E472F /* LoginProtocol.swift */,
+				AA1597511EC26CC5002E472F /* LoginViewController.swift */,
+				AA1597521EC26CC5002E472F /* LoginViewController.xib */,
+				AA1597811EC351CE002E472F /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AA1597531EC26CC5002E472F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA1597541EC26CC5002E472F /* MainPresenter.swift */,
+				AA1597551EC26CC5002E472F /* MainProtocol.swift */,
+				AA1597561EC26CC5002E472F /* MainViewController.swift */,
+				AA1597571EC26CC5002E472F /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA1597581EC26CC5002E472F /* MainCourseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */,
+				AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */,
+				AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */,
+				AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */,
+			);
+			path = MainCourseDetail;
+			sourceTree = "<group>";
+		};
+		AA15975D1EC26CC5002E472F /* MainCourses */ = {
+			isa = PBXGroup;
+			children = (
+				AA15975E1EC26CC5002E472F /* MainCourseCell */,
+				AA1597831EC357EF002E472F /* MainCoursesPresenter.swift */,
+				AA1597841EC357EF002E472F /* MainCoursesProtocol.swift */,
+				AA1597851EC357EF002E472F /* MainCoursesTableViewController.swift */,
+			);
+			path = MainCourses;
+			sourceTree = "<group>";
+		};
+		AA15975E1EC26CC5002E472F /* MainCourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA15975F1EC26CC5002E472F /* MainCourseCellProtocol.swift */,
+				AA1597601EC26CC5002E472F /* MainCourseCellView.swift */,
+				AA1597611EC26CC5002E472F /* MainCourseCellView.xib */,
+			);
+			path = MainCourseCell;
+			sourceTree = "<group>";
+		};
+		AA1597631EC26CC5002E472F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA1597641EC26CC5002E472F /* SettingsPresenter.swift */,
+				AA1597651EC26CC5002E472F /* SettingsProtocol.swift */,
+				AA1597661EC26CC5002E472F /* SettingsViewController.swift */,
+				AA1597671EC26CC5002E472F /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		AA421C931EBA16E400C1F6FF = {
 			isa = PBXGroup;
 			children = (
@@ -87,12 +201,13 @@
 		AA421C9E1EBA16E500C1F6FF /* Training */ = {
 			isa = PBXGroup;
 			children = (
-				AA421CBF1EBA1B9F00C1F6FF /* Classes */,
+				AA15974C1EC26CC5002E472F /* Classes */,
 				AA421C9F1EBA16E500C1F6FF /* AppDelegate.swift */,
-				AA421CA31EBA16E500C1F6FF /* Main.storyboard */,
 				AA421CA61EBA16E500C1F6FF /* Assets.xcassets */,
+				AA1597891EC3599A002E472F /* Main.storyboard */,
 				AA421CA81EBA16E500C1F6FF /* LaunchScreen.storyboard */,
 				AA421CAB1EBA16E500C1F6FF /* Info.plist */,
+				AA15977D1EC26CCA002E472F /* MainCoursesList.xcdatamodel */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -104,35 +219,6 @@
 				AA421CB61EBA16E500C1F6FF /* Info.plist */,
 			);
 			path = TrainingTests;
-			sourceTree = "<group>";
-		};
-		AA421CBF1EBA1B9F00C1F6FF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				AA421CC91EBA6F9D00C1F6FF /* TableView */,
-				AA421CC01EBA1BC900C1F6FF /* Login */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		AA421CC01EBA1BC900C1F6FF /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				AA421CC11EBA1BFD00C1F6FF /* LoginViewController.swift */,
-				AA421CC21EBA1BFD00C1F6FF /* LoginViewController.xib */,
-				AA421CC51EBA50F700C1F6FF /* LoginPresenter.swift */,
-				AA421CC71EBA514600C1F6FF /* LoginProtocol.swift */,
-				AA421CCE1EBB6FBA00C1F6FF /* UserModel.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		AA421CC91EBA6F9D00C1F6FF /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				AA421CCA1EBA709800C1F6FF /* TableViewViewController.swift */,
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +306,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA421CC41EBA1BFD00C1F6FF /* LoginViewController.xib in Resources */,
+				AA15976C1EC26CC5002E472F /* LoginViewController.xib in Resources */,
 				AA421CAA1EBA16E500C1F6FF /* LaunchScreen.storyboard in Resources */,
+				AA1597701EC26CC5002E472F /* MainViewController.xib in Resources */,
+				AA15978B1EC3599A002E472F /* Main.storyboard in Resources */,
+				AA15977C1EC26CC5002E472F /* SettingsViewController.xib in Resources */,
 				AA421CA71EBA16E500C1F6FF /* Assets.xcassets in Resources */,
-				AA421CA51EBA16E500C1F6FF /* Main.storyboard in Resources */,
+				AA1597771EC26CC5002E472F /* MainCourseCellView.xib in Resources */,
+				AA1597731EC26CC5002E472F /* MainCourseDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,12 +331,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA421CC61EBA50F700C1F6FF /* LoginPresenter.swift in Sources */,
-				AA421CC81EBA514600C1F6FF /* LoginProtocol.swift in Sources */,
-				AA421CC31EBA1BFD00C1F6FF /* LoginViewController.swift in Sources */,
+				AA15976D1EC26CC5002E472F /* MainPresenter.swift in Sources */,
+				AA15976A1EC26CC5002E472F /* LoginProtocol.swift in Sources */,
+				AA1597871EC357EF002E472F /* MainCoursesProtocol.swift in Sources */,
+				AA1597751EC26CC5002E472F /* MainCourseCellProtocol.swift in Sources */,
+				AA15977A1EC26CC5002E472F /* SettingsProtocol.swift in Sources */,
+				AA1597741EC26CC5002E472F /* MainCoursePresenter.swift in Sources */,
+				AA15976E1EC26CC5002E472F /* MainProtocol.swift in Sources */,
+				AA15977E1EC26CCA002E472F /* MainCoursesList.xcdatamodel in Sources */,
 				AA421CA01EBA16E500C1F6FF /* AppDelegate.swift in Sources */,
-				AA421CCF1EBB6FBA00C1F6FF /* UserModel.swift in Sources */,
-				AA421CCC1EBA709800C1F6FF /* TableViewViewController.swift in Sources */,
+				AA1597861EC357EF002E472F /* MainCoursesPresenter.swift in Sources */,
+				AA15976B1EC26CC5002E472F /* LoginViewController.swift in Sources */,
+				AA1597761EC26CC5002E472F /* MainCourseCellView.swift in Sources */,
+				AA1597681EC26CC5002E472F /* LoginModel.swift in Sources */,
+				AA1597821EC351CE002E472F /* LoginPresenter.swift in Sources */,
+				AA15977B1EC26CC5002E472F /* SettingsViewController.swift in Sources */,
+				AA15976F1EC26CC5002E472F /* MainViewController.swift in Sources */,
+				AA1597711EC26CC5002E472F /* MainCourseDetailProtocol.swift in Sources */,
+				AA1597721EC26CC5002E472F /* MainCourseDetailViewController.swift in Sources */,
+				AA1597881EC357EF002E472F /* MainCoursesTableViewController.swift in Sources */,
+				AA1597791EC26CC5002E472F /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +373,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA421CA31EBA16E500C1F6FF /* Main.storyboard */ = {
+		AA1597891EC3599A002E472F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA421CA41EBA16E500C1F6FF /* Base */,
+				AA15978A1EC3599A002E472F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -456,6 +560,7 @@
 				AA421CBB1EBA16E500C1F6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA421CBC1EBA16E500C1F6FF /* Build configuration list for PBXNativeTarget "TrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +569,7 @@
 				AA421CBE1EBA16E500C1F6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

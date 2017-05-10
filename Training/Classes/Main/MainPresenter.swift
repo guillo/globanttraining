@@ -19,11 +19,14 @@ class MainPresenter {
   func isUserLoged() {
 
     if let data = UserDefaults.standard.object(forKey: "loginModel") as? NSData {
-      let loginModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data as NSData) as! LoginModel
-      mainView.showMainCoursesScreen(user: loginModel!) // use guard
+      let loginModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)
+      guard loginModel == nil else {
+        mainView.showLoginScreen()
+        return
+      }
+      mainView.showMainCoursesScreen(user: loginModel as! LoginModel) // use guard
     } else {
       mainView.showLoginScreen()
-
     }
     
     

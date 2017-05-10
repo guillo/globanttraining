@@ -9,31 +9,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="OYE-m0-HcT" kind="presentation" identifier="loginSuccessfulSegue" id="z52-lv-Pqa"/>
+                        <segue destination="OYE-m0-HcT" kind="presentation" identifier="logedUserSegue" id="z52-lv-Pqa"/>
+                        <segue destination="1B2-2E-6tE" kind="presentation" identifier="loginInSegue" id="SZL-la-p4Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+            <point key="canvasLocation" x="127" y="187"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tFC-dB-lv7">
+            <objects>
+                <viewController id="1B2-2E-6tE" customClass="LoginViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="OYE-m0-HcT" kind="presentation" identifier="loginSuccessfulSegue" id="z6Z-TT-Okf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7P8-oM-X0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="574"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Fud-TW-kqR">
             <objects>
-                <viewController id="Kgu-HJ-nKK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M7s-6s-hlc"/>
-                        <viewControllerLayoutGuide type="bottom" id="g3a-BL-wDq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fpa-CP-VmK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                <viewController id="Kgu-HJ-nKK" customClass="SettingsViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="4mB-sy-oFm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kW-WD-sCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,24 +54,24 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Jrl-EL-OZo" kind="relationship" relationship="viewControllers" id="OSK-KU-1Nk"/>
+                        <segue destination="AcN-bm-Jue" kind="relationship" relationship="viewControllers" id="OSK-KU-1Nk"/>
                         <segue destination="Kgu-HJ-nKK" kind="relationship" relationship="viewControllers" id="6Ph-Z0-ffc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mO3-1H-ACn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-72"/>
+            <point key="canvasLocation" x="1433" y="-139"/>
         </scene>
-        <!--Item-->
+        <!--Main Courses View Controller-->
         <scene sceneID="avt-oY-LUS">
             <objects>
-                <tableViewController id="Jrl-EL-OZo" customClass="TableViewViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Jrl-EL-OZo" customClass="MainCoursesViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9qz-sQ-qH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gYL-AS-spe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gYL-AS-spe" customClass="MainCourseCellView" customModule="Training" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gYL-AS-spe" id="2fb-Sp-uIn">
@@ -81,12 +85,71 @@
                             <outlet property="delegate" destination="Jrl-EL-OZo" id="68B-Bf-ScR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="g5I-1G-n5U"/>
+                    <navigationItem key="navigationItem" id="wPy-FR-LpS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uNZ-w9-0Nq">
+                            <connections>
+                                <segue destination="wca-hd-k6V" kind="presentation" id="A6D-4I-bxs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1H-VL-K6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="-534"/>
+            <point key="canvasLocation" x="3576.8000000000002" y="-534.78260869565224"/>
+        </scene>
+        <!--Main Course Detail View Controller-->
+        <scene sceneID="Ahb-3R-UUI">
+            <objects>
+                <viewController id="nA3-UM-Mwn" customClass="MainCourseDetailViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ovR-OF-kr0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="moA-u4-vj8" userLabel="Cancel"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="7eS-nf-o9d" userLabel="Save"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gn-ZR-PCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5698" y="-535"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="86e-ef-fRt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AcN-bm-Jue" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="g5I-1G-n5U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sbv-Vt-RXF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jrl-EL-OZo" kind="relationship" relationship="rootViewController" id="bUh-e4-qgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWM-7A-Qrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.5999999999999" y="-534.78260869565224"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bl8-UK-vDj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wca-hd-k6V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FaC-At-7BZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nA3-UM-Mwn" kind="relationship" relationship="rootViewController" id="GJW-FL-Prl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySE-Fz-YYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4639" y="-536"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z52-lv-Pqa"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Training" customModuleProvider="target">
             <connections>
+                <outlet property="lastnameLabel" destination="76q-b9-Rih" id="962-48-1i5"/>
+                <outlet property="nameLabel" destination="33G-BS-8tn" id="zjo-oo-4gZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,11 +35,17 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIn-IV-Jm8">
                     <rect key="frame" x="16" y="165" width="343" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Clear Cache"/>
+                    <connections>
+                        <action selector="clearCacheTap:" destination="-1" eventType="touchUpInside" id="7Qq-Rx-TdG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqu-SZ-x5a">
                     <rect key="frame" x="16" y="221" width="343" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Logout"/>
+                    <connections>
+                        <action selector="logoutTap:" destination="-1" eventType="touchUpInside" id="UAi-qA-Tou"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

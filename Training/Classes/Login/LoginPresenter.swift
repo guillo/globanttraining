@@ -10,7 +10,9 @@ import Foundation
 
 class LoginPresenter {
 
+  // MARK: - Properties
   private weak var loginView: LoginProtocol!
+  private var loginModel: LoginModel!
 
   //MARK - Constants
   private let username = "mario"
@@ -32,12 +34,20 @@ class LoginPresenter {
     }
 
     if username == self.username && password == self.password {
-      loginView.onLoginSuccess()
+
+      if self.loginModel == nil {
+        self.loginModel = LoginModel(username: username, password: password)
+      }
+
+      let data = NSKeyedArchiver.archivedData(withRootObject: self.loginModel)
+      UserDefaults.standard.set(data, forKey: "loginModel")
+
+      //Save
+      //UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: self.loginModel), forKey: "loginModel")
+
+      loginView.onLoginSuccess(user: loginModel)
     } else {
       loginView.onLoginError(error: "You shall not pass")
     }
-
   }
-
-
 }
