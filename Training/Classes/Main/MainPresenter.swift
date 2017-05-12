@@ -17,19 +17,33 @@ class MainPresenter {
   }
 
   func isUserLoged() {
-
     if let data = UserDefaults.standard.object(forKey: "loginModel") as? NSData {
-      let loginModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)
-      guard loginModel == nil else {
-        mainView.showLoginScreen()
-        return
+      
+      do {
+        let loginModel = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)
+        
+        if loginModel == nil {
+          self.mainView.showLoginScreen()
+          return
+        }
+        
+        let user = loginModel as! LoginModel
+        
+        self.mainView.usernameLabel.text = "Hi! \(user.username), welcome back! "
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
+          self.mainView.showMainCoursesScreen(user: user)
+        }
+        
+        
+      } catch {
+        self.mainView.showLoginScreen()
       }
-      mainView.showMainCoursesScreen(user: loginModel as! LoginModel) // use guard
+      
     } else {
-      mainView.showLoginScreen()
+      self.mainView.showLoginScreen()
     }
+
     
     
   }
-
 }

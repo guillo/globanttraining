@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MainCourseCellView.addSubviewWithConstraints(fromXib : String) -&gt; ():MainCourseCellView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nib">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainCourseCellView.awakeFromNib() -&gt; ():MainCourseCellView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainCourseCellView.display(elements : [(iconId : String, title : String)]) -&gt; ():MainCourseCellView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainCoursesPresenter.setupContent(for : MainCourseCellProtocol, at : IndexPath) -&gt; ():MainCoursesPresenter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainCourseCellView.setSelected(Bool, animated : Bool) -&gt; ():MainCourseCellView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainCoursesPresenter.prepareCell(MainCourseCellProtocol, at : IndexPath) -&gt; ():MainCoursesPresenter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainCoursesTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:MainCoursesTableViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

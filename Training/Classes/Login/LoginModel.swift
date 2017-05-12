@@ -9,8 +9,8 @@
 import Foundation
 
 class LoginModel: NSObject, NSCoding  {
-  var username: String
-  var password: String
+  public var username: String
+  public var password: String
 
   init(username: String, password: String) {
     self.username = username

@@ -18,7 +18,7 @@
 		AA1597711EC26CC5002E472F /* MainCourseDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */; };
 		AA1597721EC26CC5002E472F /* MainCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */; };
 		AA1597731EC26CC5002E472F /* MainCourseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */; };
-		AA1597741EC26CC5002E472F /* MainCoursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */; };
+		AA1597741EC26CC5002E472F /* MainCourseDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975C1EC26CC5002E472F /* MainCourseDetailPresenter.swift */; };
 		AA1597751EC26CC5002E472F /* MainCourseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15975F1EC26CC5002E472F /* MainCourseCellProtocol.swift */; };
 		AA1597761EC26CC5002E472F /* MainCourseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1597601EC26CC5002E472F /* MainCourseCellView.swift */; };
 		AA1597771EC26CC5002E472F /* MainCourseCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1597611EC26CC5002E472F /* MainCourseCellView.xib */; };
@@ -60,7 +60,7 @@
 		AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseDetailProtocol.swift; sourceTree = "<group>"; };
 		AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseDetailViewController.swift; sourceTree = "<group>"; };
 		AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCourseDetailViewController.xib; sourceTree = "<group>"; };
-		AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoursePresenter.swift; sourceTree = "<group>"; };
+		AA15975C1EC26CC5002E472F /* MainCourseDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseDetailPresenter.swift; sourceTree = "<group>"; };
 		AA15975F1EC26CC5002E472F /* MainCourseCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseCellProtocol.swift; sourceTree = "<group>"; };
 		AA1597601EC26CC5002E472F /* MainCourseCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseCellView.swift; sourceTree = "<group>"; };
 		AA1597611EC26CC5002E472F /* MainCourseCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCourseCellView.xib; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				AA1597591EC26CC5002E472F /* MainCourseDetailProtocol.swift */,
 				AA15975A1EC26CC5002E472F /* MainCourseDetailViewController.swift */,
 				AA15975B1EC26CC5002E472F /* MainCourseDetailViewController.xib */,
-				AA15975C1EC26CC5002E472F /* MainCoursePresenter.swift */,
+				AA15975C1EC26CC5002E472F /* MainCourseDetailPresenter.swift */,
 			);
 			path = MainCourseDetail;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 				AA1597871EC357EF002E472F /* MainCoursesProtocol.swift in Sources */,
 				AA1597751EC26CC5002E472F /* MainCourseCellProtocol.swift in Sources */,
 				AA15977A1EC26CC5002E472F /* SettingsProtocol.swift in Sources */,
-				AA1597741EC26CC5002E472F /* MainCoursePresenter.swift in Sources */,
+				AA1597741EC26CC5002E472F /* MainCourseDetailPresenter.swift in Sources */,
 				AA15976E1EC26CC5002E472F /* MainProtocol.swift in Sources */,
 				AA15977E1EC26CCA002E472F /* MainCoursesList.xcdatamodel in Sources */,
 				AA421CA01EBA16E500C1F6FF /* AppDelegate.swift in Sources */,

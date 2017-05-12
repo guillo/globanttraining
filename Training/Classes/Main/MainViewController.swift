@@ -13,6 +13,9 @@ class MainViewController: UIViewController {
   // MARK: - Properties
   private var presenter: MainPresenter!
 
+  // MARK: - IBOutlet
+  @IBOutlet weak var usernameLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -26,8 +29,6 @@ class MainViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-
-
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,8 +36,6 @@ class MainViewController: UIViewController {
     // Pass the selected object to the new view controller.
 
   }
-
-
 }
 
 extension MainViewController: MainProtocol {

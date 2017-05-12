@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Training" customModuleProvider="target">
             <connections>
+                <outlet property="usernameLabel" destination="JM6-C7-7jm" id="2Ct-6g-2DJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,12 +20,34 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globant" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-nX-wRv">
-                    <rect key="frame" x="67" y="20" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VT7-4p-uLR">
+                    <rect key="frame" x="177" y="544" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM6-C7-7jm">
+                    <rect key="frame" x="5" y="641" width="365" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Wrf-2W-3oA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globant" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-nX-wRv">
+                    <rect key="frame" x="72" y="101" width="231" height="105"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p6F-nX-wRv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="101" id="E9i-7G-mXg"/>
+                <constraint firstAttribute="trailing" secondItem="JM6-C7-7jm" secondAttribute="trailing" constant="5" id="jte-51-cgC"/>
+                <constraint firstItem="JM6-C7-7jm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="reL-JS-9Iq"/>
+                <constraint firstItem="VT7-4p-uLR" firstAttribute="top" secondItem="p6F-nX-wRv" secondAttribute="bottom" constant="338" id="rjj-pF-bCW"/>
+                <constraint firstItem="p6F-nX-wRv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="rpE-w0-ddF"/>
+                <constraint firstAttribute="trailing" secondItem="p6F-nX-wRv" secondAttribute="trailing" constant="72" id="s1F-nd-lgC"/>
+                <constraint firstItem="VT7-4p-uLR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t1a-2w-mrP"/>
+                <constraint firstAttribute="bottom" secondItem="JM6-C7-7jm" secondAttribute="bottom" constant="5" id="yLh-PX-We2"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>
     <resources>

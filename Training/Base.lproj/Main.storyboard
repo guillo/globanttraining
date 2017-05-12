@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,11 +34,11 @@
             </objects>
             <point key="canvasLocation" x="1433" y="574"/>
         </scene>
-        <!--Item 1-->
+        <!--Settings-->
         <scene sceneID="Fud-TW-kqR">
             <objects>
-                <viewController id="Kgu-HJ-nKK" customClass="SettingsViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="4mB-sy-oFm"/>
+                <viewController id="Kgu-HJ-nKK" userLabel="Settings" customClass="SettingsViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="4mB-sy-oFm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kW-WD-sCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,16 +62,16 @@
             </objects>
             <point key="canvasLocation" x="1433" y="-139"/>
         </scene>
-        <!--Main Courses View Controller-->
+        <!--Courses-->
         <scene sceneID="avt-oY-LUS">
             <objects>
-                <tableViewController id="Jrl-EL-OZo" customClass="MainCoursesViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Jrl-EL-OZo" customClass="MainCoursesTableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9qz-sQ-qH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gYL-AS-spe" customClass="MainCourseCellView" customModule="Training" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCourseCellView" id="gYL-AS-spe" customClass="MainCourseCellView" customModule="Training" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gYL-AS-spe" id="2fb-Sp-uIn">
@@ -85,7 +85,7 @@
                             <outlet property="delegate" destination="Jrl-EL-OZo" id="68B-Bf-ScR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wPy-FR-LpS">
+                    <navigationItem key="navigationItem" title="Courses" id="wPy-FR-LpS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uNZ-w9-0Nq">
                             <connections>
                                 <segue destination="wca-hd-k6V" kind="presentation" id="A6D-4I-bxs"/>
@@ -103,19 +103,19 @@
             <objects>
                 <viewController id="nA3-UM-Mwn" customClass="MainCourseDetailViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ovR-OF-kr0">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="moA-u4-vj8" userLabel="Cancel"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="7eS-nf-o9d" userLabel="Save"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="moA-u4-vj8" userLabel="Cancel"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="7eS-nf-o9d" userLabel="Save"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gn-ZR-PCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5698" y="-535"/>
         </scene>
-        <!--Item-->
+        <!--Main Courses-->
         <scene sceneID="86e-ef-fRt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AcN-bm-Jue" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="g5I-1G-n5U"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AcN-bm-Jue" userLabel="Main Courses" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main Courses" id="g5I-1G-n5U"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sbv-Vt-RXF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

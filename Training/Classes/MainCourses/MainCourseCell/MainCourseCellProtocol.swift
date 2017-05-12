@@ -8,6 +8,12 @@
 
 import Foundation
 
+typealias MainCourseElement = (iconId: String, title: String)
+
 protocol MainCourseCellProtocol: class {
+  
+  func displayEmptyElements()
+
+  func display(elements: [MainCourseElement])
 
 }

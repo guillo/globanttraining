@@ -21,8 +21,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var errorLabel: UILabel!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
-  @IBOutlet weak var userLabel: UILabel!
-
+  
   // MARK: - IBActions
   @IBAction func btnLoginTap(_ sender: Any) {
     errorLabel.isHidden = true

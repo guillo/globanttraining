@@ -10,15 +10,35 @@ import UIKit
 
 class MainCourseCellView: UITableViewCell {
 
+  @IBOutlet weak var courseImage: UIImageView!
+  @IBOutlet weak var courseNameLabel: UILabel!
+  
+  // MARK: - Configuration
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
   }
-
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-
-    // Configure the view for the selected state
-  }
+  
+  func setup(title: String){//, image: UIImage) {
+    //courseNameLabel.text = title
+    //iconImageView.image = image
     
+  }
+  
+  // MARK: - UICollectionViewCell
+  override var reuseIdentifier: String {
+    return "MainCourseCellView"
+  }
+
+    
+}
+
+extension MainCourseCellView: MainCourseCellProtocol {
+
+  func displayEmptyElements() {
+  
+  }
+  
+  func display(elements: [MainCourseElement]) {
+    //courseNameLabel.text = "caca"
+  }
 }

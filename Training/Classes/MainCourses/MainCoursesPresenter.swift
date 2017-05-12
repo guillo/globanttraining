@@ -16,5 +16,14 @@ class MainCoursesPresenter {
   init(mainCoursesView: MainCoursesProtocol) {
     self.mainCoursesView = mainCoursesView
   }
+  
+  func setupContent(for cell: MainCourseCellProtocol, at indexPath: IndexPath) {
+    prepareCell(cell, at: indexPath)
+  }
+  private func prepareCell(_ cell: MainCourseCellProtocol, at indexPath: IndexPath) {
+    cell.displayEmptyElements()
+    
+    cell.display(elements: [MainCourseElement(iconId: "2", title: "Hola")])
+  }
 
 }

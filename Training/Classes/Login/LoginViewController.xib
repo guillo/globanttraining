@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="errorLabel" destination="PbT-dO-q4w" id="Sqj-83-Htp"/>
                 <outlet property="passwordTextField" destination="9Pa-oi-APF" id="dka-GD-4Dc"/>
-                <outlet property="userLabel" destination="K8c-56-nlt" id="5qe-9s-i3z"/>
                 <outlet property="userNameTextField" destination="SnF-t0-jqw" id="LDY-jh-bSs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,6 +34,7 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9Pa-oi-APF">
                     <rect key="frame" x="16" y="268" width="343" height="30"/>
                     <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0k-BJ-QgA">
@@ -45,23 +45,16 @@
                         <action selector="btnLoginTap:" destination="-1" eventType="touchUpInside" id="UQP-th-rEU"/>
                     </connections>
                 </button>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-56-nlt">
-                    <rect key="frame" x="317" y="626" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Username/Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbT-dO-q4w">
                     <rect key="frame" x="16" y="173" width="343" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.1442090298519112" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="SnF-t0-jqw" firstAttribute="top" secondItem="PbT-dO-q4w" secondAttribute="bottom" constant="36" id="0J5-Fb-Rpm"/>
-                <constraint firstAttribute="bottom" secondItem="K8c-56-nlt" secondAttribute="bottom" constant="20" id="5jA-nz-rTX"/>
                 <constraint firstAttribute="trailing" secondItem="iuV-eI-njI" secondAttribute="trailing" constant="68" id="8ji-G2-oQP"/>
                 <constraint firstItem="SnF-t0-jqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="FX4-Mu-5K6"/>
                 <constraint firstAttribute="trailing" secondItem="9Pa-oi-APF" secondAttribute="trailing" constant="16" id="Fnp-EV-2Ag"/>
@@ -74,7 +67,6 @@
                 <constraint firstAttribute="trailing" secondItem="PbT-dO-q4w" secondAttribute="trailing" constant="16" id="ed0-Hj-MjP"/>
                 <constraint firstAttribute="trailing" secondItem="SnF-t0-jqw" secondAttribute="trailing" constant="16" id="i55-MV-jMz"/>
                 <constraint firstItem="O0k-BJ-QgA" firstAttribute="top" secondItem="9Pa-oi-APF" secondAttribute="bottom" constant="8" id="tAO-sS-zSz"/>
-                <constraint firstAttribute="trailing" secondItem="K8c-56-nlt" secondAttribute="trailing" constant="16" id="uFt-vu-gOA"/>
                 <constraint firstItem="9Pa-oi-APF" firstAttribute="top" secondItem="SnF-t0-jqw" secondAttribute="bottom" constant="8" id="xUu-hk-jbF"/>
                 <constraint firstItem="O0k-BJ-QgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="yMk-hx-kzg"/>
             </constraints>

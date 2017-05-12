@@ -42,9 +42,6 @@ class LoginPresenter {
       let data = NSKeyedArchiver.archivedData(withRootObject: self.loginModel)
       UserDefaults.standard.set(data, forKey: "loginModel")
 
-      //Save
-      //UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: self.loginModel), forKey: "loginModel")
-
       loginView.onLoginSuccess(user: loginModel)
     } else {
       loginView.onLoginError(error: "You shall not pass")
