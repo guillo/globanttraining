@@ -18,9 +18,19 @@ class MainCourseCellView: UITableViewCell {
     super.awakeFromNib()
   }
   
-  func setup(title: String){//, image: UIImage) {
-    //courseNameLabel.text = title
-    //iconImageView.image = image
+  // MARK: - Xib Setup
+  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    super.init(style: style, reuseIdentifier: reuseIdentifier)
+    setup()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  private func setup() {
+    //courseNameLabel.text = "caca"
     
   }
   
@@ -29,7 +39,7 @@ class MainCourseCellView: UITableViewCell {
     return "MainCourseCellView"
   }
 
-    
+  
 }
 
 extension MainCourseCellView: MainCourseCellProtocol {

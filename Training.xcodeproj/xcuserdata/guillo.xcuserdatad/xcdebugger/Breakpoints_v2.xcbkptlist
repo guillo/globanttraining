@@ -170,12 +170,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Training/Classes/MainCourses/MainCourseCell/MainCourseCellView.swift"
-            timestampString = "516247880.847856"
+            timestampString = "516289451.32534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "display(elements:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Training/Classes/MainCourses/MainCourseCell/MainCourseCellView.swift"
+            timestampString = "516288062.903369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
